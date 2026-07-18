@@ -6,8 +6,8 @@
     <title>AI Business Dashboard</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
+<body>
     <h1>🚀 AI Business Dashboard</h1>
 
     <p>Welcome! This dashboard is where you'll build your AI business from idea to income.</p>
@@ -30,11 +30,18 @@
 
         <div class="card">
             <h2>✅ Today's Tasks</h2>
-            <p>See what you need to complete today.</p>
+
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="Enter today's task..."
+            >
+
+            <button id="addTask">Add Task</button>
+
+            <ul id="taskList"></ul>
         </div>
     </div>
-
-    <button id="startButton">Start Building</button>
 
     <script src="script.js"></script>
 </body>

@@ -1,15 +1,19 @@
-const button = document.getElementById("startButton");
+const addTaskButton = document.getElementById("addTask");
+const taskInput = document.getElementById("taskInput");
+const taskList = document.getElementById("taskList");
 
-button.addEventListener("click", () => {
-    const taskCard = document.querySelector(".card:last-child");
+addTaskButton.addEventListener("click", () => {
+    const task = taskInput.value.trim();
 
-    taskCard.innerHTML = `
-        <h2>✅ Today's Tasks</h2>
-        <ol>
-            <li>Review today's AI business goals</li>
-            <li>Build one new feature</li>
-            <li>Test your application</li>
-            <li>Commit changes to GitHub</li>
-        </ol>
-    `;
+    if (task === "") {
+        alert("Please enter a task.");
+        return;
+    }
+
+    const li = document.createElement("li");
+    li.textContent = task;
+
+    taskList.appendChild(li);
+
+    taskInput.value = "";
 });
