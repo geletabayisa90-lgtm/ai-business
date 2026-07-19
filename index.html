@@ -1,48 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Business Dashboard</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Contractor Estimates</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <h1>🚀 AI Business Dashboard</h1>
 
-    <p>Welcome! This dashboard is where you'll build your AI business from idea to income.</p>
+  <header class="navbar">
+    <div class="logo">EstimateAI</div>
 
-    <div class="dashboard">
-        <div class="card">
-            <h2>📊 Dashboard</h2>
-            <p>Track your progress and business goals.</p>
-        </div>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#about">About</a>
+      <button class="nav-button">Get Started</button>
+    </nav>
+  </header>
 
-        <div class="card">
-            <h2>🤖 AI Tools</h2>
-            <p>Manage the AI tools used in your business.</p>
-        </div>
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="badge">AI-powered estimating software</p>
 
-        <div class="card">
-            <h2>💰 Revenue</h2>
-            <p>Track income and business growth.</p>
-        </div>
+        <h1>Generate Professional Contractor Estimates in Seconds</h1>
 
-        <div class="card">
-            <h2>✅ Today's Tasks</h2>
+        <p class="hero-description">
+          Create clear, professional estimates for customers without spending
+          hours calculating prices and formatting documents.
+        </p>
 
-            <input
-                type="text"
-                id="taskInput"
-                placeholder="Enter today's task..."
-            >
+        <button id="generateButton" class="primary-button">
+          Generate Estimate
+        </button>
+      </div>
+    </section>
 
-            <button id="addTask">Add Task</button>
+    <section id="features" class="features">
+      <h2>Everything you need to create estimates faster</h2>
 
-            <ul id="taskList"></ul>
-        </div>
-    </div>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <h3>AI Estimate Generation</h3>
+          <p>
+            Enter the project details and receive a structured estimate in seconds.
+          </p>
+        </article>
 
-    <script src="script.js"></script>
+        <article class="feature-card">
+          <h3>Professional PDF Output</h3>
+          <p>
+            Turn estimates into clean documents that you can send to customers.
+          </p>
+        </article>
+
+        <article class="feature-card">
+          <h3>Customer History</h3>
+          <p>
+            Keep previous estimates organized so you can find them later.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <h2>Built for busy contractors</h2>
+      <p>
+        EstimateAI is designed to reduce paperwork and help contractors respond
+        to customers more quickly.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 EstimateAI. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
